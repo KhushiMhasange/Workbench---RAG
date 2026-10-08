@@ -1,0 +1,579 @@
+{
+  "corpus": "cat.txt",
+  "chunking": "one fact per line, stable ids c001..c150",
+  "notes": [
+    "expected_chunk_ids: every chunk that is a correct source for the question. recall@k needs all of them, hit@k needs any.",
+    "acceptable_chunk_ids: alternative chunks that are also a correct source (used for hit@k / MRR only, not recall).",
+    "must_include: lowercase substrings that must appear in the generated answer. Measures the end-to-end pipeline, not just retrieval.",
+    "forbidden: substrings that indicate a fabricated detail (trap values that look plausible).",
+    "answerable: false means the corpus deliberately does not contain the answer and the system should abstain."
+  ],
+  "cases": [
+    {
+      "id": "q01",
+      "question": "How fast can a cat run?",
+      "expected_chunk_ids": ["c021"],
+      "answerable": true,
+      "must_include": ["31"],
+      "forbidden": ["45 mph", "60 mph", "70 mph"],
+      "tags": ["numeric", "single-hop"]
+    },
+    {
+      "id": "q02",
+      "question": "What is the biggest wildcat in the world today?",
+      "expected_chunk_ids": ["c031"],
+      "answerable": true,
+      "must_include": ["siberian tiger"],
+      "forbidden": ["lion", "tiger shark"],
+      "tags": ["single-hop"]
+    },
+    {
+      "id": "q03",
+      "question": "What is the smallest wildcat alive today?",
+      "expected_chunk_ids": ["c032"],
+      "answerable": true,
+      "must_include": ["black-footed"],
+      "tags": ["single-hop"]
+    },
+    {
+      "id": "q04",
+      "question": "Which is the smallest pedigreed cat breed and how much does it weigh?",
+      "expected_chunk_ids": ["c037"],
+      "answerable": true,
+      "must_include": ["singapura", "4"],
+      "forbidden": ["persian"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q05",
+      "question": "What is the most popular pedigreed cat?",
+      "expected_chunk_ids": ["c036"],
+      "answerable": true,
+      "must_include": ["persian"],
+      "tags": ["single-hop"]
+    },
+    {
+      "id": "q06",
+      "question": "How many different sounds do cats make compared with dogs?",
+      "expected_chunk_ids": ["c008"],
+      "answerable": true,
+      "must_include": ["100", "10"],
+      "tags": ["numeric", "comparison"]
+    },
+    {
+      "id": "q07",
+      "question": "What is a group of cats called?",
+      "expected_chunk_ids": ["c005"],
+      "answerable": true,
+      "must_include": ["clowder"],
+      "tags": ["single-hop", "vocabulary"]
+    },
+    {
+      "id": "q08",
+      "question": "What is the technical term for a cat's hairball?",
+      "expected_chunk_ids": ["c004"],
+      "answerable": true,
+      "must_include": ["bezoar"],
+      "tags": ["vocabulary"]
+    },
+    {
+      "id": "q09",
+      "question": "How much of a cat's life is spent asleep, and how long has a nine-year-old cat actually been awake?",
+      "expected_chunk_ids": ["c001"],
+      "answerable": true,
+      "must_include": ["three years"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q10",
+      "question": "Can cats taste sweet things?",
+      "expected_chunk_ids": ["c120"],
+      "acceptable_chunk_ids": ["c002"],
+      "answerable": true,
+      "must_include": ["sweet"],
+      "forbidden": ["cats love honey"],
+      "tags": ["yesno", "negation"]
+    },
+    {
+      "id": "q11",
+      "question": "Why do cats rub against people?",
+      "expected_chunk_ids": ["c024"],
+      "answerable": true,
+      "must_include": ["scent", "territory"],
+      "tags": ["why", "multi-facet"]
+    },
+    {
+      "id": "q12",
+      "question": "How exactly do cats purr?",
+      "expected_chunk_ids": ["c025"],
+      "answerable": true,
+      "must_include": ["vocal folds", "throat"],
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "q13",
+      "question": "What is psi-traveling?",
+      "expected_chunk_ids": ["c050"],
+      "answerable": true,
+      "must_include": ["psi"],
+      "tags": ["vocabulary"]
+    },
+    {
+      "id": "q14",
+      "question": "Who invented the cat flap?",
+      "expected_chunk_ids": ["c051"],
+      "answerable": true,
+      "must_include": ["newton"],
+      "forbidden": ["edison"],
+      "tags": ["entity"]
+    },
+    {
+      "id": "q15",
+      "question": "What is the heaviest cat ever recorded?",
+      "expected_chunk_ids": ["c065"],
+      "answerable": true,
+      "must_include": ["himmy", "47"],
+      "forbidden": ["50 pounds"],
+      "tags": ["entity", "numeric"]
+    },
+    {
+      "id": "q16",
+      "question": "What was the oldest cat on record and how old was she?",
+      "expected_chunk_ids": ["c066"],
+      "answerable": true,
+      "must_include": ["crème puff", "20"],
+      "tags": ["entity", "numeric"]
+    },
+    {
+      "id": "q17",
+      "question": "Which cat holds the record for the most kittens?",
+      "expected_chunk_ids": ["c085"],
+      "answerable": true,
+      "must_include": ["dusty"],
+      "forbidden": ["kitty"],
+      "tags": ["entity"]
+    },
+    {
+      "id": "q18",
+      "question": "What was the name of the first cat sent into space?",
+      "expected_chunk_ids": ["c015"],
+      "answerable": true,
+      "must_include": ["felicette"],
+      "forbidden": ["whiskers"],
+      "tags": ["entity"]
+    },
+    {
+      "id": "q19",
+      "question": "How many bones does a cat have?",
+      "expected_chunk_ids": ["c074"],
+      "answerable": true,
+      "must_include": ["230"],
+      "forbidden": ["206", "320"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q20",
+      "question": "How many muscles control a cat's outer ear?",
+      "expected_chunk_ids": ["c062"],
+      "answerable": true,
+      "must_include": ["32"],
+      "forbidden": ["6", "12"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q21",
+      "question": "How many whiskers does a cat usually have on each side of its face?",
+      "expected_chunk_ids": ["c043"],
+      "answerable": true,
+      "must_include": ["12"],
+      "forbidden": ["24"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q22",
+      "question": "Why can't a cat climb head first down a tree?",
+      "expected_chunk_ids": ["c007"],
+      "answerable": true,
+      "must_include": ["claw"],
+      "tags": ["why"]
+    },
+    {
+      "id": "q23",
+      "question": "Why do some Siamese cats look cross-eyed?",
+      "expected_chunk_ids": ["c038"],
+      "answerable": true,
+      "must_include": ["nerve", "brain"],
+      "tags": ["why", "mechanism"]
+    },
+    {
+      "id": "q24",
+      "question": "Why do cats hate water?",
+      "expected_chunk_ids": ["c040"],
+      "answerable": true,
+      "must_include": ["fur", "insulate"],
+      "tags": ["why"]
+    },
+    {
+      "id": "q25",
+      "question": "Which cat breed likes swimming?",
+      "expected_chunk_ids": ["c040"],
+      "answerable": true,
+      "must_include": ["turkish van"],
+      "tags": ["single-hop"]
+    },
+    {
+      "id": "q26",
+      "question": "How long is a cat pregnant for?",
+      "expected_chunk_ids": ["c113"],
+      "answerable": true,
+      "must_include": ["58", "65"],
+      "forbidden": ["9 weeks"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q27",
+      "question": "What is a female cat called?",
+      "expected_chunk_ids": ["c089"],
+      "answerable": true,
+      "must_include": ["queen"],
+      "forbidden": ["tom"],
+      "tags": ["vocabulary", "negation"]
+    },
+    {
+      "id": "q28",
+      "question": "How high can a cat jump compared to its own height?",
+      "expected_chunk_ids": ["c022", "c109"],
+      "answerable": true,
+      "must_include": [],
+      "forbidden": ["ten times", "12 times"],
+      "tags": ["conflicting-corpus", "multi-source"]
+    },
+    {
+      "id": "q29",
+      "question": "Are black cats considered lucky anywhere?",
+      "expected_chunk_ids": ["c035"],
+      "answerable": true,
+      "must_include": ["britain"],
+      "tags": ["yesno", "negation"]
+    },
+    {
+      "id": "q30",
+      "question": "What is the richest cat?",
+      "expected_chunk_ids": ["c096"],
+      "answerable": true,
+      "must_include": ["blackie", "15"],
+      "forbidden": ["50,000"],
+      "tags": ["entity", "numeric", "confusable"]
+    },
+    {
+      "id": "q31",
+      "question": "What is the most expensive cat ever bought?",
+      "expected_chunk_ids": ["c042"],
+      "answerable": true,
+      "must_include": ["little nicky", "50,000"],
+      "forbidden": ["£15 million"],
+      "tags": ["entity", "numeric", "confusable"]
+    },
+    {
+      "id": "q32",
+      "question": "How many cats live in North America compared to dogs?",
+      "expected_chunk_ids": ["c014"],
+      "answerable": true,
+      "must_include": ["73", "63"],
+      "tags": ["numeric", "comparison"]
+    },
+    {
+      "id": "q33",
+      "question": "How many feral cats are there in the United States?",
+      "expected_chunk_ids": ["c091"],
+      "answerable": true,
+      "must_include": ["60 million"],
+      "forbidden": ["500 million"],
+      "tags": ["numeric", "confusable"]
+    },
+    {
+      "id": "q34",
+      "question": "Where does the word tabby come from?",
+      "expected_chunk_ids": ["c039"],
+      "answerable": true,
+      "must_include": ["attabiyah", "baghdad"],
+      "tags": ["etymology"]
+    },
+    {
+      "id": "q35",
+      "question": "What was the punishment in ancient Egypt for killing a cat?",
+      "expected_chunk_ids": ["c141"],
+      "answerable": true,
+      "must_include": ["death"],
+      "tags": ["history"]
+    },
+    {
+      "id": "q36",
+      "question": "What is the normal body temperature of a cat?",
+      "expected_chunk_ids": ["c073"],
+      "answerable": true,
+      "must_include": ["100.5", "102.5"],
+      "forbidden": ["98.6"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q37",
+      "question": "How fast does a cat's heart beat?",
+      "expected_chunk_ids": ["c079"],
+      "answerable": true,
+      "must_include": ["110", "140"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q38",
+      "question": "Which common houseplants are poisonous to cats?",
+      "expected_chunk_ids": ["c122"],
+      "answerable": true,
+      "must_include": ["ivy"],
+      "forbidden": ["basil", "mint"],
+      "tags": ["list", "safety"]
+    },
+    {
+      "id": "q39",
+      "question": "What everyday items are poisonous for a cat to eat?",
+      "expected_chunk_ids": ["c123"],
+      "answerable": true,
+      "must_include": ["chocolate", "tylenol"],
+      "tags": ["list", "safety"]
+    },
+    {
+      "id": "q40",
+      "question": "How many kittens are usually in a litter?",
+      "expected_chunk_ids": ["c028"],
+      "answerable": true,
+      "must_include": ["nine"],
+      "forbidden": ["twelve"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q41",
+      "question": "How long does a domestic cat typically live?",
+      "expected_chunk_ids": ["c117"],
+      "answerable": true,
+      "must_include": ["15", "20"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q42",
+      "question": "What happens to a cat's lifespan if it is neutered?",
+      "expected_chunk_ids": ["c118"],
+      "answerable": true,
+      "must_include": ["two", "three"],
+      "tags": ["numeric", "causal"]
+    },
+    {
+      "id": "q43",
+      "question": "Can cats see colour?",
+      "expected_chunk_ids": ["c106"],
+      "acceptable_chunk_ids": ["c044"],
+      "answerable": true,
+      "must_include": ["colour"],
+      "tags": ["yesno", "myth-busting"]
+    },
+    {
+      "id": "q44",
+      "question": "Are white cats with blue eyes often deaf?",
+      "expected_chunk_ids": ["c107"],
+      "answerable": true,
+      "must_include": ["deaf"],
+      "tags": ["yesno"]
+    },
+    {
+      "id": "q45",
+      "question": "Besides the nose, how else do cats smell things?",
+      "expected_chunk_ids": ["c149"],
+      "answerable": true,
+      "must_include": ["jacobson"],
+      "tags": ["mechanism"]
+    },
+    {
+      "id": "q46",
+      "question": "What is a cat with extra toes called?",
+      "expected_chunk_ids": ["c099"],
+      "answerable": true,
+      "must_include": ["polydactyl"],
+      "tags": ["vocabulary"]
+    },
+    {
+      "id": "q47",
+      "question": "How many toes does a cat have on a front paw and on a back paw?",
+      "expected_chunk_ids": ["c098"],
+      "answerable": true,
+      "must_include": ["five", "four"],
+      "tags": ["numeric", "comparison"]
+    },
+    {
+      "id": "q48",
+      "question": "What is believed to happen to a cat when it dies in Japan?",
+      "expected_chunk_ids": ["c060"],
+      "answerable": true,
+      "must_include": ["spirit"],
+      "tags": ["culture"]
+    },
+    {
+      "id": "q49",
+      "question": "What did the two Siamese cats in the Russian embassy uncover?",
+      "expected_chunk_ids": ["c048"],
+      "answerable": true,
+      "must_include": ["microphone", "spy"],
+      "tags": ["story", "entity"]
+    },
+    {
+      "id": "q50",
+      "question": "What is Kopi Luwak and which animal produces it?",
+      "expected_chunk_ids": ["c052"],
+      "answerable": true,
+      "must_include": ["luwak", "indonesia"],
+      "tags": ["entity"]
+    },
+    {
+      "id": "q51",
+      "question": "How did ancient Egyptians mourn a dead family cat?",
+      "expected_chunk_ids": ["c026"],
+      "answerable": true,
+      "must_include": ["eyebrow"],
+      "tags": ["culture", "history"]
+    },
+    {
+      "id": "q52",
+      "question": "What happened to cats during the Spanish Inquisition?",
+      "expected_chunk_ids": ["c012"],
+      "answerable": true,
+      "must_include": ["inquisition", "burned"],
+      "tags": ["history"]
+    },
+    {
+      "id": "q53",
+      "question": "What is the most expensive breed of cat by the record purchase price?",
+      "expected_chunk_ids": ["c094"],
+      "acceptable_chunk_ids": ["c042"],
+      "answerable": true,
+      "must_include": [],
+      "tags": ["ambiguous", "multi-source"]
+    },
+    {
+      "id": "q54",
+      "question": "How many mice is one cat food meal equivalent to?",
+      "expected_chunk_ids": ["c125"],
+      "answerable": true,
+      "must_include": ["five", "mice"],
+      "tags": ["numeric"]
+    },
+    {
+      "id": "q55",
+      "question": "Are cats solitary animals?",
+      "expected_chunk_ids": ["c116"],
+      "answerable": true,
+      "must_include": ["social"],
+      "tags": ["yesno", "myth-busting"]
+    },
+    {
+      "id": "q56",
+      "question": "What wild animal is the ancestor of all domestic cats?",
+      "expected_chunk_ids": ["c140"],
+      "answerable": true,
+      "must_include": ["african wild cat"],
+      "tags": ["single-hop"]
+    },
+    {
+      "id": "q57",
+      "question": "What is a cat lover called?",
+      "expected_chunk_ids": ["c059"],
+      "answerable": true,
+      "must_include": ["ailurophilia"],
+      "tags": ["vocabulary"]
+    },
+    {
+      "id": "q58",
+      "question": "How much does an average cat food meal equal in mice?",
+      "expected_chunk_ids": ["c125", "c064"],
+      "acceptable_chunk_ids": ["c125"],
+      "answerable": true,
+      "must_include": ["mice"],
+      "tags": ["ambiguous", "multi-source"]
+    },
+
+    {
+      "id": "u01",
+      "question": "How long does a cat's memory typically last?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Corpus says nothing about memory span.",
+      "tags": ["abstain"]
+    },
+    {
+      "id": "u02",
+      "question": "What is the cat population in Brazil?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Corpus has global/US/NA counts only.",
+      "tags": ["abstain", "near-miss"]
+    },
+    {
+      "id": "u03",
+      "question": "How much does a vet visit for a cat usually cost?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "tags": ["abstain"]
+    },
+    {
+      "id": "u04",
+      "question": "What is the best cat food brand to buy in 2024?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Opinion/recommendation, deliberately opinionated; the system should not invent a brand.",
+      "tags": ["abstain", "opinion"]
+    },
+    {
+      "id": "u05",
+      "question": "How do I train my cat to stop scratching the sofa?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Corpus has behavioural facts but no training advice.",
+      "tags": ["abstain", "advice"]
+    },
+    {
+      "id": "u06",
+      "question": "How much does a Maine Coon kitten cost?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Near-miss: corpus names Maine Coon as a popular breed but gives no price.",
+      "tags": ["abstain", "near-miss"]
+    },
+    {
+      "id": "u07",
+      "question": "Do cats dream?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Near-miss: c148 discusses sleep but not dreaming.",
+      "tags": ["abstain", "near-miss"]
+    },
+    {
+      "id": "u08",
+      "question": "What is the legal status of owning a cat in Singapore?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "tags": ["abstain", "near-miss"]
+    },
+    {
+      "id": "u09",
+      "question": "Which vaccine should I give my kitten for feline herpesvirus?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "notes": "Corpus mentions a feline AIDS form (c132) but no vaccines.",
+      "tags": ["abstain", "medical"]
+    },
+    {
+      "id": "u10",
+      "question": "How much does pet insurance for a cat cost per month?",
+      "expected_chunk_ids": [],
+      "answerable": false,
+      "tags": ["abstain"]
+    }
+  ]
+}

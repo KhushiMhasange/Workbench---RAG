@@ -1,0 +1,15 @@
+# Backend runtime dependencies.
+# Ollama runs on the host (https://ollama.com); pull models listed in rag/config.py.
+# Qdrant runs via docker-compose (qdrant/qdrant:v1.19.1, client 1.19.1).
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+httpx==0.28.1
+numpy==2.5.3
+pydantic==2.13.4
+pytest==9.1.1
+qdrant-client==1.19.1
+fastembed==0.8.1
+pypdf==6.19.0
+python-docx==1.2.0
+python-multipart==0.0.20
+fpdf2==2.8.9

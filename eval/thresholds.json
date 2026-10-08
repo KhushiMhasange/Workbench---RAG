@@ -1,0 +1,1 @@
+{"citation_validity": 0.95, "faithfulness": 0.95, "recall@k": 0.9, "mrr": 0.85, "hit@1": 0.8, "false_refusal_rate": 0.2, "abstain_precision": 0.4, "abstain_recall": 0.6}

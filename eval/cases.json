@@ -1,0 +1,1237 @@
+{
+  "version": 2,
+  "cases": [
+    {
+      "id": "cat-q01",
+      "suite": "eval-cats",
+      "question": "How fast can a cat run?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat can travel at a top speed of approximately 31 mph (49 km) over a short distance."
+        }
+      ],
+      "must_contain": [
+        "31"
+      ]
+    },
+    {
+      "id": "cat-q02",
+      "suite": "eval-cats",
+      "question": "What is the biggest wildcat in the world today?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The biggest wildcat today is the Siberian Tiger. It can be more than 12 feet (3.6 m) long (about the size of a small car) and weigh up to 700 pounds (317 kg)."
+        }
+      ],
+      "must_contain": [
+        "siberian tiger"
+      ]
+    },
+    {
+      "id": "cat-q03",
+      "suite": "eval-cats",
+      "question": "What is the smallest wildcat alive today?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The smallest wildcat today is the Black-footed cat. The females are less than 20 inches (50 cm) long and can weigh as little as 2.5 lbs. (1.2 kg)."
+        }
+      ],
+      "must_contain": [
+        "black-footed"
+      ]
+    },
+    {
+      "id": "cat-q04",
+      "suite": "eval-cats",
+      "question": "Which is the smallest pedigreed cat breed and how much does it weigh?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The smallest pedigreed cat is a Singapura, which can weigh just 4 lbs. (1.8 kg), or about five large cans of cat food. The largest pedigreed cats are Maine Coon cats, which can weigh 25 lbs. (11.3 kg), or nearly twice as much as an average cat weighs."
+        }
+      ],
+      "must_contain": [
+        "singapura",
+        "4"
+      ]
+    },
+    {
+      "id": "cat-q05",
+      "suite": "eval-cats",
+      "question": "What is the most popular pedigreed cat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The most popular pedigreed cat is the Persian cat, followed by the Main Coon cat and the Siamese cat."
+        }
+      ],
+      "must_contain": [
+        "persian"
+      ]
+    },
+    {
+      "id": "cat-q06",
+      "suite": "eval-cats",
+      "question": "How many different sounds do cats make compared with dogs?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats make about 100 different sounds. Dogs make only about 10."
+        }
+      ],
+      "must_contain": [
+        "100",
+        "10"
+      ]
+    },
+    {
+      "id": "cat-q07",
+      "suite": "eval-cats",
+      "question": "What is a group of cats called?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A group of cats is called a \u201cclowder.\u201d"
+        }
+      ],
+      "must_contain": [
+        "clowder"
+      ]
+    },
+    {
+      "id": "cat-q08",
+      "suite": "eval-cats",
+      "question": "What is the technical term for a cat's hairball?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The technical term for a cat\u2019s hairball is a \u201cbezoar.\u201d"
+        }
+      ],
+      "must_contain": [
+        "bezoar"
+      ]
+    },
+    {
+      "id": "cat-q09",
+      "suite": "eval-cats",
+      "question": "How much of a cat's life is spent asleep, and how long has a nine-year-old cat actually been awake?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "On average, cats spend 2/3 of every day sleeping. That means a nine-year-old cat has been awake for only three years of its life."
+        }
+      ],
+      "must_contain": [
+        "three years"
+      ]
+    },
+    {
+      "id": "cat-q10",
+      "suite": "eval-cats",
+      "question": "Can cats taste sweet things?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats can\u2019t taste sweets."
+        }
+      ],
+      "must_contain": [
+        "sweet"
+      ]
+    },
+    {
+      "id": "cat-q11",
+      "suite": "eval-cats",
+      "question": "Why do cats rub against people?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat rubs against people not only to be affectionate but also to mark out its territory with scent glands around its face. The tail area and paws also carry the cat\u2019s scent."
+        }
+      ],
+      "must_contain": [
+        "scent",
+        "territory"
+      ]
+    },
+    {
+      "id": "cat-q12",
+      "suite": "eval-cats",
+      "question": "How exactly do cats purr?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Researchers are unsure exactly how a cat purrs. Most veterinarians believe that a cat purrs by vibrating vocal folds deep in the throat. To do this, a muscle in the larynx opens and closes the air passage about 25 times per second."
+        }
+      ],
+      "must_contain": [
+        "vocal folds",
+        "throat"
+      ]
+    },
+    {
+      "id": "cat-q13",
+      "suite": "eval-cats",
+      "question": "What is psi-traveling?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The ability of a cat to find its way home is called \u201cpsi-traveling.\u201d Experts think cats either use the angle of the sunlight to find their way or that cats have magnetized cells in their brains that act as compasses."
+        }
+      ],
+      "must_contain": [
+        "psi"
+      ]
+    },
+    {
+      "id": "cat-q14",
+      "suite": "eval-cats",
+      "question": "Who invented the cat flap?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Isaac Newton invented the cat flap. Newton was experimenting in a pitch-black room. Spithead, one of his cats, kept opening the door and wrecking his experiment. The cat flap kept both Newton and Spithead happy."
+        }
+      ],
+      "must_contain": [
+        "newton"
+      ]
+    },
+    {
+      "id": "cat-q15",
+      "suite": "eval-cats",
+      "question": "What is the heaviest cat ever recorded?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The heaviest cat on record is Himmy, a Tabby from Queensland, Australia. He weighed nearly 47 pounds (21 kg). He died at the age of 10."
+        }
+      ],
+      "must_contain": [
+        "himmy",
+        "47"
+      ]
+    },
+    {
+      "id": "cat-q16",
+      "suite": "eval-cats",
+      "question": "What was the oldest cat on record and how old was she?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The oldest cat on record was Cr\u00e8me Puff from Austin, Texas, who lived from 1967 to August 6, 2005, three days after her 38th birthday. A cat typically can live up to 20 years, which is equivalent to about 96 human years."
+        }
+      ],
+      "must_contain": [
+        "cr\u00e8me puff",
+        "20"
+      ]
+    },
+    {
+      "id": "cat-q17",
+      "suite": "eval-cats",
+      "question": "Which cat holds the record for the most kittens?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat called Dusty has the known record for the most kittens. She had more than 420 kittens in her lifetime."
+        }
+      ],
+      "must_contain": [
+        "dusty"
+      ]
+    },
+    {
+      "id": "cat-q18",
+      "suite": "eval-cats",
+      "question": "What was the name of the first cat sent into space?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The first cat in space was a French cat named Felicette (a.k.a. \u201cAstrocat\u201d) In 1963, France blasted the cat into outer space. Electrodes implanted in her brains sent neurological signals back to Earth. She survived the trip."
+        }
+      ],
+      "must_contain": [
+        "felicette"
+      ]
+    },
+    {
+      "id": "cat-q19",
+      "suite": "eval-cats",
+      "question": "How many bones does a cat have?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat has 230 bones in its body. A human has 206. A cat has no collarbone, so it can fit through any opening the size of its head."
+        }
+      ],
+      "must_contain": [
+        "230"
+      ]
+    },
+    {
+      "id": "cat-q20",
+      "suite": "eval-cats",
+      "question": "How many muscles control a cat's outer ear?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats have 32 muscles that control the outer ear (humans have only 6). A cat can independently rotate its ears 180 degrees."
+        }
+      ],
+      "must_contain": [
+        "32"
+      ]
+    },
+    {
+      "id": "cat-q21",
+      "suite": "eval-cats",
+      "question": "How many whiskers does a cat usually have on each side of its face?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat usually has about 12 whiskers on each side of its face."
+        }
+      ],
+      "must_contain": [
+        "12"
+      ]
+    },
+    {
+      "id": "cat-q22",
+      "suite": "eval-cats",
+      "question": "Why can't a cat climb head first down a tree?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat can\u2019t climb head first down a tree because every claw on a cat\u2019s paw points the same way. To get down from a tree, a cat must back down."
+        }
+      ],
+      "must_contain": [
+        "claw"
+      ]
+    },
+    {
+      "id": "cat-q23",
+      "suite": "eval-cats",
+      "question": "Why do some Siamese cats look cross-eyed?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Some Siamese cats appear cross-eyed because the nerves from the left side of the brain go to mostly the right eye and the nerves from the right side of the brain go mostly to the left eye. This causes some double vision, which the cat tries to correct by \u201ccrossing\u201d its eyes."
+        }
+      ],
+      "must_contain": [
+        "nerve",
+        "brain"
+      ]
+    },
+    {
+      "id": "cat-q24",
+      "suite": "eval-cats",
+      "question": "Why do cats hate water?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats hate the water because their fur does not insulate well when it\u2019s wet. The Turkish Van, however, is one cat that likes swimming. Bred in central Asia, its coat has a unique texture that makes it water resistant."
+        }
+      ],
+      "must_contain": [
+        "fur",
+        "insulate"
+      ]
+    },
+    {
+      "id": "cat-q25",
+      "suite": "eval-cats",
+      "question": "Which cat breed likes swimming?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats hate the water because their fur does not insulate well when it\u2019s wet. The Turkish Van, however, is one cat that likes swimming. Bred in central Asia, its coat has a unique texture that makes it water resistant."
+        }
+      ],
+      "must_contain": [
+        "turkish van"
+      ]
+    },
+    {
+      "id": "cat-q26",
+      "suite": "eval-cats",
+      "question": "How long is a cat pregnant for?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat is pregnant for about 58-65 days."
+        }
+      ],
+      "must_contain": [
+        "58",
+        "65"
+      ]
+    },
+    {
+      "id": "cat-q27",
+      "suite": "eval-cats",
+      "question": "What is a female cat called?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A female cat is called a queen or a molly."
+        }
+      ],
+      "must_contain": [
+        "queen"
+      ]
+    },
+    {
+      "id": "cat-q28",
+      "suite": "eval-cats",
+      "question": "How high can a cat jump compared to its own height?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat can jump up to five times its own height in a single bound."
+        },
+        {
+          "file": "cat.txt",
+          "anchor": "A cat can jump even seven times as high as it is tall."
+        }
+      ],
+      "must_contain": []
+    },
+    {
+      "id": "cat-q29",
+      "suite": "eval-cats",
+      "question": "Are black cats considered lucky anywhere?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "While many parts of Europe and North America consider the black cat a sign of bad luck, in Britain and Australia, black cats are considered lucky."
+        }
+      ],
+      "must_contain": [
+        "britain"
+      ]
+    },
+    {
+      "id": "cat-q30",
+      "suite": "eval-cats",
+      "question": "What is the richest cat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The richest cat is Blackie who was left \u00a315 million by his owner, Ben Rea."
+        }
+      ],
+      "must_contain": [
+        "blackie",
+        "15"
+      ]
+    },
+    {
+      "id": "cat-q31",
+      "suite": "eval-cats",
+      "question": "What is the most expensive cat ever bought?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The costliest cat ever is named Little Nicky, who cost his owner $50,000. He is a clone of an older cat."
+        }
+      ],
+      "must_contain": [
+        "little nicky",
+        "50,000"
+      ]
+    },
+    {
+      "id": "cat-q32",
+      "suite": "eval-cats",
+      "question": "How many cats live in North America compared to dogs?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats are North America\u2019s most popular pets: there are 73 million cats compared to 63 million dogs. Over 30% of households in North America own a cat."
+        }
+      ],
+      "must_contain": [
+        "73",
+        "63"
+      ]
+    },
+    {
+      "id": "cat-q33",
+      "suite": "eval-cats",
+      "question": "How many feral cats are there in the United States?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "There are up to 60 million feral cats in the United States alone."
+        }
+      ],
+      "must_contain": [
+        "60 million"
+      ]
+    },
+    {
+      "id": "cat-q34",
+      "suite": "eval-cats",
+      "question": "Where does the word tabby come from?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Researchers believe the word \u201ctabby\u201d comes from Attabiyah, a neighborhood in Baghdad, Iraq. Tabbies got their name because their striped coats resembled the famous wavy patterns in the silk produced in this city."
+        }
+      ],
+      "must_contain": [
+        "attabiyah",
+        "baghdad"
+      ]
+    },
+    {
+      "id": "cat-q35",
+      "suite": "eval-cats",
+      "question": "What was the punishment in ancient Egypt for killing a cat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "In ancient Egypt, killing a cat was a crime punishable by death."
+        }
+      ],
+      "must_contain": [
+        "death"
+      ]
+    },
+    {
+      "id": "cat-q36",
+      "suite": "eval-cats",
+      "question": "What is the normal body temperature of a cat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The normal body temperature of a cat is between 100.5 \u00b0 and 102.5 \u00b0F. A cat is sick if its temperature goes below 100 \u00b0 or above 103 \u00b0F."
+        }
+      ],
+      "must_contain": [
+        "100.5",
+        "102.5"
+      ]
+    },
+    {
+      "id": "cat-q37",
+      "suite": "eval-cats",
+      "question": "How fast does a cat's heart beat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat\u2019s heart beats nearly twice as fast as a human heart, at 110 to 140 beats a minute."
+        }
+      ],
+      "must_contain": [
+        "110",
+        "140"
+      ]
+    },
+    {
+      "id": "cat-q38",
+      "suite": "eval-cats",
+      "question": "Which common houseplants are poisonous to cats?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew."
+        }
+      ],
+      "must_contain": [
+        "ivy"
+      ]
+    },
+    {
+      "id": "cat-q39",
+      "suite": "eval-cats",
+      "question": "What everyday items are poisonous for a cat to eat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Tylenol and chocolate are both poisonous to cats."
+        }
+      ],
+      "must_contain": [
+        "chocolate",
+        "tylenol"
+      ]
+    },
+    {
+      "id": "cat-q40",
+      "suite": "eval-cats",
+      "question": "How many kittens are usually in a litter?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Most cats give birth to a litter of between one and nine kittens. The largest known litter ever produced was 19 kittens, of which 15 survived."
+        }
+      ],
+      "must_contain": [
+        "nine"
+      ]
+    },
+    {
+      "id": "cat-q41",
+      "suite": "eval-cats",
+      "question": "How long does a domestic cat typically live?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "When well treated, a cat can live twenty or more years but the average life span of a domestic cat is 14 years."
+        }
+      ],
+      "must_contain": [
+        "15",
+        "20"
+      ]
+    },
+    {
+      "id": "cat-q42",
+      "suite": "eval-cats",
+      "question": "What happens to a cat's lifespan if it is neutered?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Neutering a cat extends its life span by two or three years."
+        }
+      ],
+      "must_contain": [
+        "two",
+        "three"
+      ]
+    },
+    {
+      "id": "cat-q43",
+      "suite": "eval-cats",
+      "question": "Can cats see colour?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "It is a common belief that cats are color blind. However, recent studies have shown that cats can see blue, green and red."
+        }
+      ],
+      "must_contain": [
+        "colour"
+      ]
+    },
+    {
+      "id": "cat-q44",
+      "suite": "eval-cats",
+      "question": "Are white cats with blue eyes often deaf?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A large majority of white cats with blue eyes are deaf. White cats with only one blue eye are deaf only in the ear closest to the blue eye. White cats with orange eyes do not have this disability."
+        }
+      ],
+      "must_contain": [
+        "deaf"
+      ]
+    },
+    {
+      "id": "cat-q45",
+      "suite": "eval-cats",
+      "question": "Besides the nose, how else do cats smell things?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Besides smelling with their nose, cats can smell with an additional organ called the Jacobson\u2019s organ, located in the upper surface of the mouth."
+        }
+      ],
+      "must_contain": [
+        "jacobson"
+      ]
+    },
+    {
+      "id": "cat-q46",
+      "suite": "eval-cats",
+      "question": "What is a cat with extra toes called?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats are sometimes born with extra toes. This is called polydactyl. These toes will not harm the cat, but you should keep his claws trimmed just like any toe."
+        }
+      ],
+      "must_contain": [
+        "polydactyl"
+      ]
+    },
+    {
+      "id": "cat-q47",
+      "suite": "eval-cats",
+      "question": "How many toes does a cat have on a front paw and on a back paw?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Cats have five toes on each front paw, but only four toes on each back paw."
+        }
+      ],
+      "must_contain": [
+        "five",
+        "four"
+      ]
+    },
+    {
+      "id": "cat-q48",
+      "suite": "eval-cats",
+      "question": "What is believed to happen to a cat when it dies in Japan?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "In Japan, cats are thought to have the power to turn into super spirits when they die. This may be because according to the Buddhist religion, the body of the cat is the temporary resting place of very spiritual people."
+        }
+      ],
+      "must_contain": [
+        "spirit"
+      ]
+    },
+    {
+      "id": "cat-q49",
+      "suite": "eval-cats",
+      "question": "What did the two Siamese cats in the Russian embassy uncover?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "In Holland\u2019s embassy in Moscow, Russia, the staff noticed that the two Siamese cats kept meowing and clawing at the walls of the building. Their owners finally investigated, thinking they would find mice. Instead, they discovered microphones hidden by Russian spies. The cats heard the microphones when they turned on."
+        }
+      ],
+      "must_contain": [
+        "microphone",
+        "spy"
+      ]
+    },
+    {
+      "id": "cat-q50",
+      "suite": "eval-cats",
+      "question": "What is Kopi Luwak and which animal produces it?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The world\u2019s rarest coffee, Kopi Luwak, comes from Indonesia where a wildcat known as the luwak lives. The cat eats coffee berries and the coffee beans inside pass through the stomach. The beans are harvested from the cat\u2019s dung heaps and then cleaned and roasted. Kopi Luwak sells for about $500 for a 450 g (1 lb) bag."
+        }
+      ],
+      "must_contain": [
+        "luwak",
+        "indonesia"
+      ]
+    },
+    {
+      "id": "cat-q51",
+      "suite": "eval-cats",
+      "question": "How did ancient Egyptians mourn a dead family cat?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "When a family cat died in ancient Egypt, family members would mourn by shaving off their eyebrows. They also held elaborate funerals during which they drank wine and beat their breasts. The cat was embalmed with a sculpted wooden mask and the tiny mummy was placed in the family tomb or in a pet cemetery with tiny mummies of mice."
+        }
+      ],
+      "must_contain": [
+        "eyebrow"
+      ]
+    },
+    {
+      "id": "cat-q52",
+      "suite": "eval-cats",
+      "question": "What happened to cats during the Spanish Inquisition?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "During the time of the Spanish Inquisition, Pope Innocent VIII condemned cats as evil and thousands of cats were burned. Unfortunately, the widespread killing of cats led to an explosion of the rat population, which exacerbated the effects of the Black Death."
+        }
+      ],
+      "must_contain": [
+        "inquisition",
+        "burned"
+      ]
+    },
+    {
+      "id": "cat-q53",
+      "suite": "eval-cats",
+      "question": "What is the most expensive breed of cat by the record purchase price?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The most expensive cat was an Asian Leopard cat (ALC)-Domestic Shorthair (DSH) hybrid named Zeus. Zeus, who is 90% ALC and 10% DSH, has an asking price of \u00a3100,000 ($154,000)."
+        }
+      ],
+      "must_contain": []
+    },
+    {
+      "id": "cat-q54",
+      "suite": "eval-cats",
+      "question": "How many mice is one cat food meal equivalent to?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The average cat food meal is the equivalent to about five mice."
+        }
+      ],
+      "must_contain": [
+        "five",
+        "mice"
+      ]
+    },
+    {
+      "id": "cat-q55",
+      "suite": "eval-cats",
+      "question": "Are cats solitary animals?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "Contrary to popular belief, the cat is a social animal. A pet cat will respond and answer to speech, and seems to enjoy human companionship."
+        }
+      ],
+      "must_contain": [
+        "social"
+      ]
+    },
+    {
+      "id": "cat-q56",
+      "suite": "eval-cats",
+      "question": "What wild animal is the ancestor of all domestic cats?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The ancestor of all domestic cats is the African Wild Cat which still exists today."
+        }
+      ],
+      "must_contain": [
+        "african wild cat"
+      ]
+    },
+    {
+      "id": "cat-q57",
+      "suite": "eval-cats",
+      "question": "What is a cat lover called?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "A cat lover is called an Ailurophilia (Greek: cat+lover)."
+        }
+      ],
+      "must_contain": [
+        "ailurophilia"
+      ]
+    },
+    {
+      "id": "cat-q58",
+      "suite": "eval-cats",
+      "question": "How much does an average cat food meal equal in mice?",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "cat.txt",
+          "anchor": "The average cat food meal is the equivalent to about five mice."
+        },
+        {
+          "file": "cat.txt",
+          "anchor": "Cats have about 130,000 hairs per square inch (20,155 hairs per square centimeter). i"
+        }
+      ],
+      "must_contain": [
+        "mice"
+      ]
+    },
+    {
+      "id": "cat-u01",
+      "suite": "eval-cats",
+      "question": "How long does a cat's memory typically last?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u02",
+      "suite": "eval-cats",
+      "question": "What is the cat population in Brazil?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u03",
+      "suite": "eval-cats",
+      "question": "How much does a vet visit for a cat usually cost?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u04",
+      "suite": "eval-cats",
+      "question": "What is the best cat food brand to buy in 2024?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u05",
+      "suite": "eval-cats",
+      "question": "How do I train my cat to stop scratching the sofa?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u06",
+      "suite": "eval-cats",
+      "question": "How much does a Maine Coon kitten cost?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u07",
+      "suite": "eval-cats",
+      "question": "Do cats dream?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u08",
+      "suite": "eval-cats",
+      "question": "What is the legal status of owning a cat in Singapore?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u09",
+      "suite": "eval-cats",
+      "question": "Which vaccine should I give my kitten for feline herpesvirus?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "id": "cat-u10",
+      "suite": "eval-cats",
+      "question": "How much does pet insurance for a cat cost per month?",
+      "answerable": false,
+      "gold": []
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "27 days"
+        }
+      ],
+      "must_contain": [
+        "27"
+      ],
+      "id": "mix-001",
+      "question": "How many annual leave days do staff get?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "FIN-7710"
+        }
+      ],
+      "must_contain": [
+        "FIN-7710"
+      ],
+      "id": "mix-002",
+      "question": "What ticket is needed for flights over $620?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "SEC-TOKEN-9X"
+        }
+      ],
+      "must_contain": [
+        "SEC-TOKEN-9X"
+      ],
+      "id": "mix-003",
+      "question": "Which VPN token SKU must be used offsite?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "pricing.csv",
+          "anchor": "MON-27X4"
+        }
+      ],
+      "must_contain": [
+        "MON-27X4"
+      ],
+      "id": "mix-004",
+      "question": "What is the standard monitor SKU and its price in the pricing table?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "pricing.csv",
+          "anchor": "WDG-1001"
+        }
+      ],
+      "must_contain": [
+        "49"
+      ],
+      "id": "mix-005",
+      "question": "How much does Widget Pro cost?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "policy.docx",
+          "anchor": "$62 per day"
+        }
+      ],
+      "must_contain": [
+        "62"
+      ],
+      "id": "mix-006",
+      "question": "What is the per-diem rate in the travel policy?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "policy.docx",
+          "anchor": "LAP-8810"
+        }
+      ],
+      "must_contain": [
+        "LAP-8810"
+      ],
+      "id": "mix-007",
+      "question": "What laptop SKU is standard issue?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "notes.txt",
+          "anchor": "2026-09-14"
+        }
+      ],
+      "must_contain": [
+        "2026-09-14"
+      ],
+      "id": "mix-008",
+      "question": "When is the Northwind launch date?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "notes.txt",
+          "anchor": "OPS-5510"
+        }
+      ],
+      "must_contain": [
+        "OPS-5510"
+      ],
+      "id": "mix-009",
+      "question": "What is the rollout ticket in the meeting notes?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "$1,500"
+        }
+      ],
+      "must_contain": [
+        "1,500"
+      ],
+      "id": "mix-010",
+      "question": "What is the referral bonus?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "policy.docx",
+          "anchor": "$329"
+        }
+      ],
+      "must_contain": [
+        "329"
+      ],
+      "id": "mix-011",
+      "question": "What is the monitor price according to the authoritative policy doc?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "notes.txt",
+          "anchor": "SEC-3301"
+        }
+      ],
+      "must_contain": [
+        "SEC-3301"
+      ],
+      "id": "mix-012",
+      "question": "Which ticket covers security audit?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "$120 per month"
+        }
+      ],
+      "must_contain": [
+        "120"
+      ],
+      "id": "mix-013",
+      "question": "How much is the remote allowance?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "pricing.csv",
+          "anchor": "GAD-5555"
+        }
+      ],
+      "must_contain": [
+        "99"
+      ],
+      "id": "mix-014",
+      "question": "What is the price of Gadget Plus?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": true,
+      "gold": [
+        {
+          "file": "handbook.pdf",
+          "anchor": "IT-9152"
+        }
+      ],
+      "must_contain": [
+        "IT-9152"
+      ],
+      "id": "mix-015",
+      "question": "What is the support ticket for monitor setup?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": false,
+      "gold": [],
+      "must_contain": [],
+      "id": "mix-u01",
+      "question": "What is the CEO's favourite colour?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": false,
+      "gold": [],
+      "must_contain": [],
+      "id": "mix-u02",
+      "question": "How much does a helicopter cost?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": false,
+      "gold": [],
+      "must_contain": [],
+      "id": "mix-u03",
+      "question": "What is the stock price of Northwind?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": false,
+      "gold": [],
+      "must_contain": [],
+      "id": "mix-u04",
+      "question": "When is the Mars office opening?"
+    },
+    {
+      "suite": "eval-mixed",
+      "answerable": false,
+      "gold": [],
+      "must_contain": [],
+      "id": "mix-u05",
+      "question": "Who won the 2024 football final?"
+    }
+  ]
+}
